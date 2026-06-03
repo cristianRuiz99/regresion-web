@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predicción de Ventas</title>
+</head>
+<body>
+
+    <h1>Predicción de Ventas</h1>
+
+    <form action="/predecir" method="POST">
+        <input type="number" name="publicidad" required>
+        <button type="submit">Predecir</button>
+    </form>
+
+    {% if resultado %}
+        <h2>Resultado: {{ resultado }}</h2>
+    {% endif %}
+
+</body>
+</html>
